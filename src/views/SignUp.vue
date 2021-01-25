@@ -16,9 +16,36 @@
 
 <script>
 import HeaderAuth from "../components/HeaderAuth";
+import axios from "axios";
 export default {
+  data() {
+    return {
+      name: "",
+      profile: "",
+      email: "",
+      password: ""
+    };
+  },
   components: {
     HeaderAuth
+  },
+  methods: {
+    auth() {
+      axios
+        .post("powerful-anchorage-95120/api/registar",{
+          name: this.name,
+          profile: this.profile,
+          email: this.email,
+          password: this.password
+        })
+        .then(response => {
+          console.log(response);
+          this.$router.replace("/");
+        })
+        .catch(error => {
+          alert(error);
+        });
+    }
   }
 };
 </script>
