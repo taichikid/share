@@ -4,10 +4,10 @@
     <div class="card">
       <p>新規登録</p>
       <div class="form">
-        <input placeholder="ユーザーネーム" type="text" />
-        <input placeholder="プロフィール" type="text" />
-        <input placeholder="メールアドレス" type="email" />
-        <input placeholder="パスワード" type="password" />
+        <input placeholder="ユーザーネーム" type="text" v-model="name" />
+        <input placeholder="プロフィール" type="text" v-model="profile" />
+        <input placeholder="メールアドレス" type="email" v-model="email" />
+        <input placeholder="パスワード" type="password" v-model="password" />
         <button @click="auth">新規登録</button>
       </div>
     </div>
@@ -32,7 +32,7 @@ export default {
   methods: {
     auth() {
       axios
-        .post("https://powerful-anchorage-95120.herokuapp.com/api/register",{
+        .post("https://powerful-anchorage-95120.herokuapp.com/api/register", {
           name: this.name,
           profile: this.profile,
           email: this.email,
