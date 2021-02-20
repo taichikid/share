@@ -14,10 +14,10 @@
         </div>
         <div class="message" v-for="(comment,index) in data" :key="index">
           <div class="flex">
-            <p class="name">{{comment.name}}</p>
+            <p class="name">{{comment.comment_user.name}}</p>
           </div>
           <div>
-            <p class="text">{{comment.content}}</p>
+            <p class="text">{{comment.comment.content}}</p>
           </div>
         </div>
         <input v-model="content" type="text" />

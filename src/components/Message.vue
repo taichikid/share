@@ -14,7 +14,7 @@
               })
             " alt v-if="profile"/>
         </div>
-        <p class="text">{{value.share}}</p>
+        <p class="text">{{value.item.share}}</p>
       </div>
     </div>
   </div>
