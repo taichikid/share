@@ -6,6 +6,7 @@ import SignUp from '../views/SignUp.vue'
 import Profile from "../views/Profile.vue"
 import Detail from "../views/Detail.vue"
 import store from "../store/index"
+import First from "../views/First.vue"
 
 Vue.use(VueRouter)
 
