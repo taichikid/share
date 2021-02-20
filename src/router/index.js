@@ -9,11 +9,16 @@ import store from "../store/index"
 
 Vue.use(VueRouter)
 
-const routes = [{
- path: '/',
+const routes = [
+{
+ path: '/login',
  name: 'login',
  component: Login
 }, {
+  path: '/',
+  name: 'first',
+  component: First
+},{
  path: '/home',
  name: 'Home',
  component: Home,
