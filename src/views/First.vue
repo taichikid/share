@@ -1,44 +1,63 @@
 <template>
+ <div class="cover">
     <div>
-        <HeaderAuth />
         <div class="youkoso">
-            <p>DREAM SHARE</p>
-            <p>~DSHARE~</p>
-            <p>誰しもが寝ている時一度は見たことがあるだろう夢。へんてこな夢、怖い夢、正夢など様々な夢があり、それらすべてが非常に興味深いと私は思っている。しかし、時間が経つにつれ内容を忘れてしまうことが多いと思う。ひじょーーーにもったいない！！！そう思う方々も少なからずいるのではないか、そんな方々にはぜひ夢を記録し、共有するアプリ「DREAM SHARE」縮めてDSHAREを使ってほしい！そして私にみんなの夢を教えてほしい！</p>
-            <button @click="$router.push('/')">ようこそ夢の中へ！</button>
+            <p class="title">DREAM SHARE</p>
+            <p class="sub-title">~夢日記~</p>
+            <p>誰しもが寝ている時一度は見たことがあるだろう夢。この世には様々な夢があり、それらすべてが非常に興味深いと私は思っている。しかし、時間が経つにつれ内容を忘れてしまうことが多いと思う。ひじょーーーにもったいない！！！そう思う方々も少なからずいるのではないか、そんな方々にはぜひ夢を記録し、共有するアプリ「DREAM SHARE」縮めてDSHAREを使ってほしい！そして私にみんなの夢を教えてほしい！</p>
+            <button @click="$router.push('/login')">ようこそ夢の中へ！</button>
         </div>
     </div>
+ </div>
 </template>
 
 <script>
-import HeaderAuth from "../components/HeaderAuth";
-export default {
-  components: {
-    HeaderAuth
-  }, 
+export default { 
 };
 </script>
 
 <style scoped>
+p {
+  font-size: 24px;
+}
 button {
-  width: 100px;
+  margin-top: 20px;
+  width: 140px;
   text-align: center;
   padding: 8px 0 10px;
   color: #fff;
   background-color: #5419da;
   border-radius: 25px;
   cursor: pointer;
+  font-family: "Hannari";
+}
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.sub-title {
+    margin-bottom: 20px;
+    font-size: 30px;
 }
 .youkoso {
-  margin: 100px auto;
-  width: 350px;
-  background: #fff;
-  border-radius: 5px;
-  padding: 20px;
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
 }
 .youkoso p {
-  color: black;
-  font-weight: bold;
+  color: rgb(194, 47, 182);
   text-align: center;
+  font-family: "Hannari";
+  font-family: 'Kaushan Script', cursive;
+}
+.cover {
+    background-image: url("../assets/bed-1284238_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 }
 </style>

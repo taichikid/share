@@ -138,8 +138,9 @@ export default {
 }
 .message {
   padding: 20px;
-  border-bottom: solid 1px white;
-  border-left: solid 1px white;
+  border: 3px solid  #1c9cad;
+  background-color: black;
+  border-radius: 10px;
 }
 .name {
   font-size: 18px;

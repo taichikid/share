@@ -61,11 +61,11 @@ export default {
 
 <style scoped>
 .left {
-  width: 22%;
+  width: 10%;
   height: 100vh;
 }
 .right {
-  width: 78%;
+  width: 90%;
   height: 100vh;
 }
 .flex {
@@ -73,15 +73,17 @@ export default {
 }
 .profile {
   padding: 20px;
-  border-bottom: solid 1px white;
-  border-left: 1px solid white;
+  border: 3px solid #1c9cad;
+  background-color: black;
+  border-radius: 10px;
 }
 .profile-name {
   font-size: 24px;
 }
 .title {
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
+  border: 3px solid #1c9cad;
+  background-color: black;
+  border-radius: 10px;
   padding: 15px;
 }
 .title p {

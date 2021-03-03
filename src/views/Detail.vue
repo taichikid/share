@@ -78,19 +78,20 @@ export default {
 
 <style scoped>
 .left {
-  width: 22%;
+  width: 10%;
   height: 100vh;
 }
 .right {
-  width: 78%;
+  width: 90%;
   height: 100vh;
 }
 .flex {
   display: flex;
 }
 .title {
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
+  border: 3px solid #1c9cad;
+  background-color: black;
+  border-radius: 10px;
   padding: 15px;
 }
 .title p {
@@ -101,8 +102,9 @@ export default {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
+  border: 3px solid  #1c9cad;
+  background-color: black;
+  border-radius: 10px;
 }
 .comment input {
   width: 95%;
@@ -110,17 +112,18 @@ export default {
   margin-top: 20px;
   margin-bottom: 15px;
   margin-left: 10px;
+  border: 3px solid  #1c9cad;
+  background-color: black;
   border-radius: 10px;
-  border: 1px solid white;
-  background-color: #15202b;
   color: white;
 }
 .message {
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
+  border: 3px solid  #1c9cad;
+  background-color: black;
+  border-radius: 10px;
 }
 .text {
   margin-top: 10px;

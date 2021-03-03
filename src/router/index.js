@@ -7,6 +7,7 @@ import Profile from "../views/Profile.vue"
 import Detail from "../views/Detail.vue"
 import store from "../store/index"
 import First from "../views/First.vue"
+import Share from "../views/Share.vue"
 
 Vue.use(VueRouter)
 
@@ -45,6 +46,10 @@ const routes = [
     requireAuth: true,
   },
   props: true,
+}, {
+  path: '/share',
+  name: 'share',
+  component: Share,
 }]
 
 const router = new VueRouter({

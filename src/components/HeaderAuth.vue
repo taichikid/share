@@ -1,11 +1,11 @@
 <template>
  <div class="header flex">
    <div class="left">
-     <img class="logo" src="../assets/logo.png"/>
+     <p class="logo">DSHARE</p>
    </div>
    <div class="right flex">
-     <p @click="$router.push('/signup')">新規登録</p>
-     <p @click="$router.push('/login')">ログイン</p>
+     <p class="signup" @click="$router.push('/signup')">新規登録</p>
+     <p class="login" @click="$router.push('/login')">ログイン</p>
    </div>
  </div>
 </template>
@@ -18,12 +18,22 @@
  margin-right: 20px;
  cursor: pointer;
 }
+.signup:hover{
+ opacity: 0.3;
+ transition-duration: 0.3s;
+}
+.login:hover{
+ opacity: 0.3;
+ transition-duration: 0.3s;
+}
 .header {
  margin: 20px;
 }
 .logo {
- width: 150px;
+ font-size: 32px;
+ width: 120px;
  cursor: pointer;
+ font-family: 'Kaushan Script', cursive;
 }
 .flex {
  display: flex;
