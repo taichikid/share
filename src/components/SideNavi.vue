@@ -5,7 +5,7 @@
       <span></span>
       <span></span>
     </div>
-    <div class="left-padding" :class="{'open':isClass}">
+    <div class="left-padding" :class="{'open':isClass}" v-if="show">
       <p class="logo">DSHARE</p>
       <div class="flex icon-field" @click="$router.push('/home')">
         <img class="icon" src="../assets/home.png" />
@@ -16,7 +16,7 @@
         <p>プロフィール</p>
       </div>
       <div class="flex icon-field" @click="$router.push('/share')">
-        <img class="icon" src="../assets/えんぴつのアイコン素材.png" />
+        <img class="icon" src="../assets/pencil.png" />
         <p>シェア</p>
       </div>
       <div class="flex icon-field" @click="$store.dispatch('logout')">
@@ -31,12 +31,14 @@
 export default {
   data() {
     return {
-      isClass: false
+      isClass: false,
+      show : false
     };
   },
   methods: {
     hamburger() {
       this.isClass = !this.isClass;
+      this.show = !this.show;
     }
   }
 };
@@ -44,13 +46,12 @@ export default {
 
 <style scoped>
 .left-padding {
-  padding: 20px;
-  width: calc(100% - 580px);
+  padding: 20px 20px 20px 70px;
   transition: 0.2s;
   position: fixed;
   top: 0;
-  left: calc(-100% - 580px);
-  box-shadow: 5px 0 5px 535px rgba(38, 98, 213, 0.3);
+  left: calc(100% - 1536px);
+  box-shadow: 5px 0 5px 1320px rgba(38, 98, 213, 0.3);
   z-index: 998;
   background-color:black;
   height: 100%;
@@ -122,7 +123,7 @@ export default {
     transform: rotate(-45deg);
   }
   #hamburger.active {
-    left: 170px;
+    left: 20px;
   }
   .left-padding.open {
     left: 0;

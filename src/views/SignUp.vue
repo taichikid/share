@@ -59,6 +59,7 @@ button {
   background-color: #5419da;
   border-radius: 25px;
   cursor: pointer;
+  border-bottom: 5px solid rgb(24, 3, 32);
 }
 .card {
   margin: 100px auto;
@@ -85,5 +86,9 @@ input {
 }
 .form button {
   margin-top: 15px;
+}
+.form button:hover {
+  margin-top: 18px;
+  border-bottom: 2px solid rgb(24, 3, 32);
 }
 </style>

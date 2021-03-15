@@ -103,5 +103,10 @@ button {
   border-radius: 25px;
   display: block;
   margin: 0 0 0 auto;
+  border-bottom: 5px solid rgb(24, 3, 32);
+}
+button:hover {
+  border-bottom: 2px solid rgb(24, 3, 32);
+  margin-top: 3px;
 }
 </style>

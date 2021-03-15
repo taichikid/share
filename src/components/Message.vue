@@ -11,8 +11,8 @@
               $router.push({
                 path: '/detail/' + value.item.id,
                 params: { id: value.item.id },
-              })
-            " alt v-if="profile"/>
+              })" 
+            alt v-if="profile"/>
         </div>
         <p class="text">{{value.item.share}}</p>
       </div>
